@@ -25,14 +25,8 @@ function Elemento(element, qtd, xml){
 	}
 
 	this.add = function(elem){
-		var box = $("<div />", {
-			class: "alert alert-danger"
-		});
-
 		qtde++;
 		var text = "<strong>Atenção: </strong>Mensagem incorreta. Quantidade: <strong>" + qtde + "</strong>";
-		box.html(text);
-		elem.prepend(box);
 		elqtde.html(qtde);
 		generator.generateNewElement(text);
 	}
