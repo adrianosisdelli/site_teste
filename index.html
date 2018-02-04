@@ -13,16 +13,23 @@
 	<title>Título da página</title>
 </head>
 <body ng-app="AppName" ng-controller="AppCtrl">
-	<div id="principal" class="container" style="margin-top: 20px;">
-		<div class="alert alert-success"><strong>Parabéns! </strong>Você foi o sorteado.</div>
-		<div class="alert"><strong>Cuidado! </strong>Você foi exposto.</div>
-		<div class="alert alert-warning"><strong>Atenção: </strong>foram encontrados algunas exceções no código que podem vir a dar probelmas.</div>
-		<div>
-			<button id="btnwarning" class="btn btn-default">Warning</button>
-			<button id="btnerror" class="btn btn-default">Error</button>
-			<button id="btnsuccess" class="btn btn-default">Success</button>
-			<button id="btnadiciona" class="btn btn-default">Adiciona</button>
-		</div>
+	<div class="container" style="margin-top: 20px;">
+
+		<div class="row">
+			<div class="col-md-4">
+				<div>
+					<button id="btnwarning" class="btn btn-default">Warning</button>
+					<button id="btnerror" class="btn btn-default">Error</button>
+					<button id="btnsuccess" class="btn btn-default">Success</button>
+					<button id="btnadiciona" class="btn btn-default">Adiciona</button>
+				</div>
+			</div>
+			<div id="principal" class="col-md-8">
+				<div class="alert alert-success"><strong>Parabéns! </strong>Você foi o sorteado.</div>
+				<div class="alert"><strong>Cuidado! </strong>Você foi exposto.</div>
+				<div class="alert alert-warning"><strong>Atenção: </strong>foram encontrados algunas exceções no código que podem vir a dar probelmas.</div>
+			</div>
+		</div>		
 	</div>
 
 
