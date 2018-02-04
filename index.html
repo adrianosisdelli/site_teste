@@ -17,12 +17,13 @@
 
 		<div class="row">
 			<div class="col-md-4">
-				<div>
+				<div style="margin-bottom: 20px;">
 					<button id="btnwarning" class="btn btn-default">Warning</button>
 					<button id="btnerror" class="btn btn-default">Error</button>
 					<button id="btnsuccess" class="btn btn-default">Success</button>
 					<button id="btnadiciona" class="btn btn-primary">Adiciona <span id="elqtde" class="badge">0</span></button>
 				</div>
+				<div id="xmlarea"></div>
 			</div>
 			<div id="principal" class="col-md-8">
 				<div class="alert alert-success"><strong>Parabéns! </strong>Você foi o sorteado.</div>
@@ -36,7 +37,7 @@
 
 	<script type="text/javascript">
 
-		var el = new Elemento($(".alert"), $("#elqtde"));
+		var el = new Elemento($(".alert"), $("#elqtde"), $("#xmlarea"));
 
 
 		$(document).ready(function(){
