@@ -21,7 +21,7 @@
 					<button id="btnwarning" class="btn btn-default">Warning</button>
 					<button id="btnerror" class="btn btn-default">Error</button>
 					<button id="btnsuccess" class="btn btn-default">Success</button>
-					<button id="btnadiciona" class="btn btn-default">Adiciona</button>
+					<button id="btnadiciona" class="btn btn-primary">Adiciona <span id="elqtde" class="badge">0</span></button>
 				</div>
 			</div>
 			<div id="principal" class="col-md-8">
@@ -36,7 +36,7 @@
 
 	<script type="text/javascript">
 
-		var el = new Elemento($(".alert"));
+		var el = new Elemento($(".alert"), $("#elqtde"));
 
 
 		$(document).ready(function(){

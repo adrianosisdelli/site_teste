@@ -1,5 +1,6 @@
-function Elemento(element){
+function Elemento(element, qtd){
 	var el = element;
+	var elqtde = qtd;
 	var boldText = "Atenção! ";
 	var normalText = "Isto acaba de ser adicionado ao clicar no botão";
 	var qtde = 0;
@@ -31,5 +32,6 @@ function Elemento(element){
 
 		box.html("<strong>Atenção: </strong>Mensagem incorreta. Quantidade: <strong>" + qtde + "</strong>");
 		elem.prepend(box);
+		elqtde.html(qtde);
 	}
 }
